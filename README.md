@@ -108,7 +108,7 @@ methods whenever something changes:
 
 ```java
 public RegistrationController() {
-    view.getFirstNameField().textProperty().subscribe(()-> updateFirstName());
+    view.getFirstNameField().textProperty().subscribe(() -> updateFirstName());
     // And similar for last name.
 }
 ```

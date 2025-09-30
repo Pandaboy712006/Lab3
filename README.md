@@ -102,12 +102,13 @@ into the model:
     // Add a similar method for updating the last name.
 ```
 
-Finally, add a constructor to `RegistrationController` and register listeners on
-the views to call your `update` methods whenever something changes.
+`TextFields` have a `TextProperty` we can listen to for changes. Add a constructor
+to `RegistrationController` and register listeners on  the views to call your `update` 
+methods whenever something changes:
 
 ```java
 public RegistrationController() {
-    view.getFirstNameField().setOnAction(_ -> updateFirstName());
+    view.getFirstNameField().textProperty().subscribe(()-> updateFirstName());
     // And similar for last name.
 }
 ```

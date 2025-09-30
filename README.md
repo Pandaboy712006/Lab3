@@ -102,6 +102,15 @@ into the model:
     // Add a similar method for updating the last name.
 ```
 
+Finally, add a constructor to `RegistrationController` and register listeners on
+the views to call your `update` methods whenever something changes.
+
+```java
+public RegistrationController() {
+    view.getFirstNameField().setOnAction(_ -> updateFirstName());
+    // And similar for last name.
+}
+```
 
 ## Responding to Button Clicks
 
@@ -132,3 +141,9 @@ to the registration form:
            for the lab, but good practice.
 
 Ensure that clicking the "Register" button correctly prints all information to the console.
+
+## Submission Instructions
+
+When you are finished, upload all of your model, view, and controller classes to Moodle.
+Place them in a single zip or tar file if you know how to do that, otherwise you may
+upload the files individually.

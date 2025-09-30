@@ -42,3 +42,5 @@ The source files consist of the following class definitions:
 
 Run the application via the `Lab3App` class and ensure you see an empty
 (except for the "Register" button") registration window.
+
+## Rendering the Registration Form

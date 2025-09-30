@@ -10,18 +10,12 @@ public class RegistrationModel {
     private final StringProperty firstName = new SimpleStringProperty();
     private final StringProperty lastName = new SimpleStringProperty();
 
-    private final BooleanProperty submittable = new SimpleBooleanProperty(false);
-
     public StringProperty getFirstName() {
         return firstName;
     }
 
     public StringProperty getLastName() {
         return lastName;
-    }
-
-    public BooleanProperty isSubmittable() {
-        return submittable;
     }
 
 }

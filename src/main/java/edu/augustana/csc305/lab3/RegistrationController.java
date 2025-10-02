@@ -32,6 +32,13 @@ public class RegistrationController {
             public void handle(ActionEvent actionEvent) {
                 System.out.print(model.getFirstName().get());
                 System.out.print(model.getLastName().get());
+                System.out.print(model.getBday().get());
+                System.out.print(model.getEmail().get());
+                System.out.print(model.getPhoneNum().get());
+                System.out.print(model.getStAddress().get());
+                System.out.print(model.getCity().get());
+                System.out.print(model.getState().get());
+                System.out.print(model.getZip().get());
             }
         });
     }

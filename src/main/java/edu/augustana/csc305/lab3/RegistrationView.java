@@ -35,6 +35,32 @@ public class RegistrationView extends BorderPane {
         return RegistrationFormView.getLastName();
     }
 
+    public TextField getBdayField(){
+        return RegistrationFormView.getBday();
+    }
+
+    public TextField getEmailField(){
+        return RegistrationFormView.getEmail();
+    }
+
+    public TextField getPhoneNumField(){ return RegistrationFormView.getPhoneNum(); }
+
+    public TextField getStAddressField(){
+        return RegistrationFormView.getStAddress();
+    }
+
+    public TextField getCityField(){
+        return RegistrationFormView.getCity();
+    }
+
+    public TextField getStateField(){
+        return RegistrationFormView.getState();
+    }
+
+    public TextField getZipField(){
+        return RegistrationFormView.getZip();
+    }
+
     public Button getButton(){
         return registerButton;
     }

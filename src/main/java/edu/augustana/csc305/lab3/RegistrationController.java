@@ -22,10 +22,36 @@ public class RegistrationController {
         model.getLastName().set(view.getLastNameField().getText());
     }
 
+    private void updateBday() { model.getBday().set(view.getBdayField().getText()); }
+    private void updateEmail() {model.getEmail().set(view.getEmailField().getText()); }
+    private void updatePhoneNum() {
+        model.getPhoneNum().set(view.getPhoneNumField().getText());
+    }
+    private void updateStAddress() {
+        model.getStAddress().set(view.getStAddressField().getText());
+    }
+    private void updateCity() {
+        model.getCity().set(view.getCityField().getText());
+    }
+    private void updateState() {
+        model.getState().set(view.getStateField().getText());
+    }
+    private void updateZip() {
+        model.getZip().set(view.getZipField().getText());
+    }
+
     public RegistrationController() {
         view.getFirstNameField().textProperty().subscribe(() -> updateFirstName());
         // And similar for last name.
         view.getLastNameField().textProperty().subscribe(() -> updateLastName());
+
+        view.getBdayField().textProperty().subscribe(() -> updateBday());
+        view.getEmailField().textProperty().subscribe(() -> updateEmail());
+        view.getPhoneNumField().textProperty().subscribe(() -> updatePhoneNum());
+        view.getStAddressField().textProperty().subscribe(() -> updateStAddress());
+        view.getCityField().textProperty().subscribe(() -> updateCity());
+        view.getStateField().textProperty().subscribe(() -> updateState());
+        view.getZipField().textProperty().subscribe(() -> updateZip());
 
         view.getButton().setOnAction(new EventHandler<ActionEvent>() {
             @Override

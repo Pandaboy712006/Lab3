@@ -9,7 +9,7 @@ import java.io.IOException;
 public class Lab3App extends Application {
 
     @Override public void start(Stage stage) throws IOException {
-        Scene scene = new Scene(new RegistrationController().getView(), 400, 200);
+        Scene scene = new Scene(new RegistrationController().getView(), 400, 350);
         stage.setScene(scene);
         stage.setTitle("Student Registration");
         stage.show();
